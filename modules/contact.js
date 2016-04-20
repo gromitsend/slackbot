@@ -22,7 +22,7 @@ function execute(req, res) {
             contacts.forEach(function(contact) {
                 var fields = [];
                 fields.push({title: "Name", value: contact.get("Name"), short:true});
-                fields.push({title: "Phone", value: contact.get("All_Phone_Numbers__c"), short:true});
+                fields.push({title: "Phone", value: contact.get("Phone"), short:true});
                 fields.push({title: "Email", value: contact.get("Email"), short:true});
                 attachments.push({color: "#009cdb", fields: fields});
             });
